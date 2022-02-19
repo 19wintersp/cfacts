@@ -41,12 +41,20 @@ void print_help(char* argv0) {
 	puts("-A, --add=URL   add URL as a new source");
 	puts("                SOURCE is required for the name");
 	puts("-l, --list      display the list of sources");
+
+	puts("");
+
+	puts(PACKAGE_LICENSE);
 }
 
 void print_version() {
 	puts(PACKAGE_STRING);
 	puts(PACKAGE_FCOPY);
 	puts(COMPILE_INFO);
+
+	puts("");
+
+	puts(PACKAGE_LICENSE);
 }
 
 static char* get_source_url(char* name) {

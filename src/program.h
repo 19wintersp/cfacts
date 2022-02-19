@@ -14,6 +14,10 @@
 #define PACKAGE_COPY    "Copyright (c) 2022"
 #define PACKAGE_FCOPY   PACKAGE_COPY " " PACKAGE_AUTHOR
 
+#define PACKAGE_LICENSE "MIT license\n" \
+	"This is free software: you may change and share it.\n" \
+	"There is no warranty, to the extent permitted by law."
+
 #define COMPILE_DATE "on " __DATE__ " "
 #define COMPILE_FOR  "for " PLATFORM_NAME " "
 #define COMPILE_INFO "Compiled " COMPILE_DATE COMPILE_FOR
