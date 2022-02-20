@@ -4,10 +4,10 @@
 #include "platform.h"
 #include "program.h"
 
-#ifdef PLATFORM_LINUX
+#if defined(PLATFORM_LINUX) || defined(PLATFORM_BSD)
 #define CONFIG_DIR ".config/" PROGRAM_NAME
 #define BASE_DIR   "HOME"
-#endif // ifdef PLATFORM_LINUX
+#endif // ifdef PLATFORM_LINUX || PLATFORM_BSD
 
 #ifdef PLATFORM_APPLE
 #define CONFIG_DIR "Library/Preferences/" PACKAGE_DOT
